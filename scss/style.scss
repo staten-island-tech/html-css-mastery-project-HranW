@@ -1,0 +1,46 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+div {
+  height: 110%;
+}
+
+header {
+  height: 110%;
+}
+
+.homepage {
+  display: flex;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(121, 246, 255, 0.315),
+      rgba(121, 247, 169, 0.281)
+    ),
+    url(img/homepage-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: rem;
+}
+
+.info {
+  background-color: blue;
+}
+
+.photo {
+  background-color: brown;
+}
+
+.stories {
+  background-color: green;
+}
+
+.about {
+  background-color: grey;
+}
