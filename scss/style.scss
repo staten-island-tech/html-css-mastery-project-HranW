@@ -6,24 +6,16 @@ html {
   box-sizing: border-box;
 }
 
-div {
-  height: 110%;
-}
-
-header {
-  height: 110%;
-}
-
 body {
-  background-color: rgba(250, 226, 120, 0.397)
+  background-color: rgba(250, 226, 120, 0.397);
 }
 
 .homepage {
   display: flex;
   background-image: linear-gradient(
       to bottom,
-      rgba(151, 239, 245, 0.397),
-      rgba(73, 70, 247, 0.411)
+      rgba(124, 236, 184, 0.288),
+      rgba(68, 172, 233, 0.342)
     ),
     url(img/homepage-background.jpg);
   background-repeat: no-repeat;
@@ -32,6 +24,14 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 0.75rem;
+  border-radius: 5rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  text-align: center;
+  margin: auto;
+  padding: 0;
   @include phone {
     font-size: 5rem;
   }
@@ -41,17 +41,14 @@ body {
 }
 
 .info {
-  background-color: blue;
+  height: 100%;
 }
 
 .photo {
-  background-color: brown;
 }
 
 .stories {
-  background-color: green;
 }
 
 .about {
-  background-color: grey;
 }
