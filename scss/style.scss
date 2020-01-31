@@ -7,7 +7,13 @@ html {
 }
 
 body {
-  background-color: rgba(250, 226, 120, 0.397);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(124, 236, 184, 0.288),
+    rgba(68, 172, 233, 0.342)
+  ),
+  url(img/body-background.jpg);
+background-size: cover;
 }
 
 .homepage {
@@ -20,9 +26,13 @@ body {
       rgba(68, 172, 233, 0.342)
     ),
     url(img/homepage-background.jpg);
-  background-position: top;
+  background-position: center;
   background-size: cover;
+  box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
   border-radius: 5rem;
+  margin: 0.75rem;
+
+
 
   .homepage-textbox {
     position: absolute;
@@ -40,11 +50,10 @@ body {
     color: black;
     text-transform: uppercase;
     text-shadow: 0.5rem 0.5rem darkgray;
-    width: 100vw;
     text-align: center;
     font-weight: 700;
     animation-name: slide-in;
-    animation-duration: 1s;
+    animation-duration: 1.25s;
     animation-timing-function: ease-out;
 
     .homepage-text-primary {
