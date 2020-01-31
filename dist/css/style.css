@@ -7,21 +7,32 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 236, 184, 0.13)), to(rgba(68, 173, 233, 0.123))), url(img/body-background.jpg);
   background-image: linear-gradient(to bottom, rgba(124, 236, 184, 0.13), rgba(68, 173, 233, 0.123)), url(img/body-background.jpg);
+=======
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 236, 184, 0.288)), to(rgba(68, 172, 233, 0.342))), url(img/body-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(124, 236, 184, 0.288), rgba(68, 172, 233, 0.342)), url(img/body-background.jpg);
+>>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
   background-size: cover;
 }
 
 .homepage {
   position: relative;
   height: 100vh;
+<<<<<<< HEAD
   background-image: url(img/homepage-background.jpg);
+=======
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 236, 184, 0.288)), to(rgba(68, 172, 233, 0.342))), url(img/homepage-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(124, 236, 184, 0.288), rgba(68, 172, 233, 0.342)), url(img/homepage-background.jpg);
+>>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
           box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
   border-radius: 5rem;
   margin: 0.75rem;
+<<<<<<< HEAD
 }
 
 .homepage .container {
@@ -50,6 +61,8 @@ body {
 .homepage .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
           transform: rotate(45deg) translate(-8px, -8px);
+=======
+>>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
 }
 
 .homepage .homepage-textbox {
@@ -81,8 +94,13 @@ body {
   text-shadow: 0.5rem 0.5rem darkgray;
   text-align: center;
   font-weight: 700;
+<<<<<<< HEAD
   -webkit-animation-name: zoomIn;
           animation-name: zoomIn;
+=======
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+>>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
   -webkit-animation-duration: 1.25s;
           animation-duration: 1.25s;
   -webkit-animation-timing-function: ease-out;
