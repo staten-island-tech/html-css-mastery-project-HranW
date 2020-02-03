@@ -8,69 +8,23 @@ html {
 
 body {
   background-image: linear-gradient(
-<<<<<<< HEAD
       to bottom,
-      rgba(124, 236, 184, 0.13),
-      rgba(68, 173, 233, 0.123)
+      rgba(124, 236, 184, 0.11),
+      rgba(68, 173, 233, 0.13)
     ),
     url(img/body-background.jpg);
   background-size: cover;
-=======
-    to bottom,
-    rgba(124, 236, 184, 0.288),
-    rgba(68, 172, 233, 0.342)
-  ),
-  url(img/body-background.jpg);
-background-size: cover;
->>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
 }
 
 .homepage {
   position: relative;
   height: 100vh;
-
-<<<<<<< HEAD
   background-image: url(img/homepage-background.jpg);
-=======
-  background-image: linear-gradient(
-      to bottom,
-      rgba(124, 236, 184, 0.288),
-      rgba(68, 172, 233, 0.342)
-    ),
-    url(img/homepage-background.jpg);
->>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
   background-position: center;
   background-size: cover;
   box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
   border-radius: 5rem;
-  margin: 0.75rem;
-
-<<<<<<< HEAD
-  .container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-=======
-
->>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
+  margin: 1rem;
 
   .homepage-textbox {
     position: absolute;
@@ -90,11 +44,7 @@ background-size: cover;
     text-shadow: 0.5rem 0.5rem darkgray;
     text-align: center;
     font-weight: 700;
-<<<<<<< HEAD
     animation-name: zoomIn;
-=======
-    animation-name: slide-in;
->>>>>>> 17e5e3faf57096da6efb0f24db4c48a9f2403939
     animation-duration: 1.25s;
     animation-timing-function: ease-out;
 
@@ -113,20 +63,42 @@ background-size: cover;
         letter-spacing: 2.2rem;
       }
     }
-    .homepage-text-secondary {
-      font-size: 1.5rem;
-      width: 80vw;
-      margin: 0 auto;
+    .button {
+      display: inline-block;
+      position: relative;
+      font-family: "Bowlby One SC", cursive;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3b3334;
+      padding: 12px 20px;
+      width: 120px;
       text-align: center;
-      @include laptop {
-        font-size: 3rem;
-      }
+      border-radius: 5px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      border: 2px solid #5f5255;
+      box-shadow: 0 4px 0 #282425, 0 0 6px #282425, 1px 1px 0px #282425,
+        -1px -1px 0px #282425, 0px 8px 10px rgba(0, 0, 0, 0.5);
+    }
+    .push:active {
+      box-shadow: 0 2px 0 #282425, 0 0 6px #282425, 1px 1px 0px #282425,
+        -1px -1px 0px #282425, 0px 4px 10px rgba(0, 0, 0, 0.5);
+      top: 2px;
     }
   }
 }
 
 .info {
-  height: 100%;
+  position: relative;
+  height: 100vh;
+  background-image: url(img/info-background.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 2.5rem 2.5rem rgba(17, 129, 32, 0.61) inset;
+  border-radius: 5rem;
+  margin: 1rem;
 }
 
 .photo {
@@ -147,4 +119,8 @@ background-size: cover;
   50% {
     opacity: 1;
   }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
 }
