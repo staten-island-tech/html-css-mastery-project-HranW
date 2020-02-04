@@ -4,6 +4,7 @@ html {
   margin: 0;
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,9 +45,6 @@ body {
     text-shadow: 0.5rem 0.5rem darkgray;
     text-align: center;
     font-weight: 700;
-    animation-name: zoomIn;
-    animation-duration: 1.25s;
-    animation-timing-function: ease-out;
 
     .homepage-text-primary {
       font-size: 4rem;
@@ -54,6 +52,9 @@ body {
       letter-spacing: 1rem;
       text-align: center;
       margin: 0 auto;
+      animation-name: zoomIn;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
       @include tablet {
         font-size: 6rem;
         letter-spacing: 1.8rem;
@@ -81,6 +82,9 @@ body {
       border: 2px solid #5f5255;
       box-shadow: 0 4px 0 #282425, 0 0 6px #282425, 1px 1px 0px #282425,
         -1px -1px 0px #282425, 0px 8px 10px rgba(0, 0, 0, 0.5);
+      animation-name: wobble;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
     }
     .push:active {
       box-shadow: 0 2px 0 #282425, 0 0 6px #282425, 1px 1px 0px #282425,
@@ -91,7 +95,6 @@ body {
 }
 
 .info {
-  position: relative;
   height: 100vh;
   background-image: url(img/info-background.jpg);
   background-position: center;
@@ -99,6 +102,10 @@ body {
   box-shadow: 0 0 2.5rem 2.5rem rgba(17, 129, 32, 0.61) inset;
   border-radius: 5rem;
   margin: 1rem;
+  .info-images {
+    display: flex; 
+    height: 70rem;
+  }
 }
 
 .photo {
@@ -121,6 +128,32 @@ body {
   }
 }
 
-.zoomIn {
-  animation-name: zoomIn;
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
