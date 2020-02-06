@@ -7,22 +7,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 236, 184, 0.11)), to(rgba(68, 173, 233, 0.13))), url(img/body-background.jpg);
-  background-image: linear-gradient(to bottom, rgba(124, 236, 184, 0.11), rgba(68, 173, 233, 0.13)), url(img/body-background.jpg);
-  background-size: cover;
-}
-
 .homepage {
   position: relative;
   height: 100vh;
   background-image: url(img/homepage-background.jpg);
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
-          box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
-  border-radius: 5rem;
-  margin: 1rem;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .homepage .homepage-textbox {
@@ -121,8 +113,8 @@ body {
   background-image: url(img/info-background.jpg);
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(17, 129, 32, 0.61) inset;
-          box-shadow: 0 0 2.5rem 2.5rem rgba(17, 129, 32, 0.61) inset;
+  -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(73, 77, 73, 0.555) inset;
+          box-shadow: 0 0 2.5rem 2.5rem rgba(73, 77, 73, 0.555) inset;
   border-radius: 5rem;
   margin: 1rem;
 }
@@ -145,8 +137,9 @@ body {
 }
 
 .info .info-images-cities {
-  height: 80vh;
-  width: 40vh;
+  border-radius: 5rem;
+  height: 60vh;
+  width: 30vh;
 }
 
 @-webkit-keyframes zoomIn {
