@@ -7,14 +7,22 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 236, 184, 0.11)), to(rgba(68, 173, 233, 0.13))), url(img/body-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(124, 236, 184, 0.11), rgba(68, 173, 233, 0.13)), url(img/body-background.jpg);
+  background-size: cover;
+}
+
 .homepage {
   position: relative;
   height: 100vh;
   background-image: url(img/homepage-background.jpg);
   background-position: center;
   background-size: cover;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  -webkit-box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
+          box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
+  border-radius: 5rem;
+  margin: 1rem;
 }
 
 .homepage .homepage-textbox {
@@ -56,8 +64,8 @@ html {
   margin: 0 auto;
   -webkit-animation-name: zoomIn;
           animation-name: zoomIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
@@ -108,18 +116,25 @@ html {
   top: 2px;
 }
 
-.info {
+.culture {
   height: 100vh;
-  background-image: url(img/info-background.jpg);
+}
+
+.cities {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 89, 187, 0.281)), to(rgba(83, 59, 59, 0.26))), url(img/info-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(36, 89, 187, 0.281), rgba(83, 59, 59, 0.26)), url(img/info-background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(73, 77, 73, 0.555) inset;
-          box-shadow: 0 0 2.5rem 2.5rem rgba(73, 77, 73, 0.555) inset;
+  -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(21, 42, 100, 0.452) inset;
+          box-shadow: 0 0 2.5rem 2.5rem rgba(21, 42, 100, 0.452) inset;
   border-radius: 5rem;
   margin: 1rem;
 }
 
-.info .info-images {
+.cities .cities-images {
   margin: 0;
   padding: 0;
   border: 0;
@@ -136,7 +151,7 @@ html {
   display: flex;
 }
 
-.info .info-images-cities {
+.cities .cities-images-place {
   border-radius: 5rem;
   height: 60vh;
   width: 30vh;

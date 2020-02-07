@@ -6,18 +6,27 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+ 
 body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(124, 236, 184, 0.11),
+      rgba(68, 173, 233, 0.13)
+    ),
+    url(img/body-background.jpg);
+  background-size: cover;
 }
-
+ 
 .homepage {
   position: relative;
   height: 100vh;
   background-image: url(img/homepage-background.jpg);
   background-position: center;
   background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
+  box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
+  border-radius: 5rem;
+  margin: 1rem;
+ 
   .homepage-textbox {
     position: absolute;
     top: 50%;
@@ -36,7 +45,7 @@ body {
     text-shadow: 0.5rem 0.5rem darkgray;
     text-align: center;
     font-weight: 700;
-
+ 
     .homepage-text-primary {
       font-size: 4rem;
       width: 80vw;
@@ -44,7 +53,7 @@ body {
       text-align: center;
       margin: 0 auto;
       animation-name: zoomIn;
-      animation-duration: 1.5s;
+      animation-duration: 1.25s;
       animation-timing-function: ease-out;
       @include tablet {
         font-size: 6rem;
@@ -85,15 +94,26 @@ body {
   }
 }
 
-.info {
+.culture {
   height: 100vh;
-  background-image: url(img/info-background.jpg);
+}
+ 
+.cities {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(36, 89, 187, 0.281),
+    rgba(83, 59, 59, 0.26)
+  ),
+  url(img/info-background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 2.5rem 2.5rem rgba(73, 77, 73, 0.555) inset;
+  box-shadow: 0 0 2.5rem 2.5rem rgba(21, 42, 100, 0.452) inset;
   border-radius: 5rem;
   margin: 1rem;
-  .info-images {
+  .cities-images {
     margin: 0;
     padding: 0;
     border: 0;
@@ -103,7 +123,7 @@ body {
     align-items: center;
     display: flex;
   }
-  .info-images-cities {
+  .cities-images-place {
     border-radius: 5rem;
     height: 60vh;
     width: 30vh;
@@ -114,56 +134,55 @@ body {
   }
   .guangzhou {
   }
-  .shanghai:hover {
-  }
 }
-
+ 
 .photo {
 }
-
+ 
 .stories {
 }
-
+ 
 .about {
 }
-
+ 
 @keyframes zoomIn {
   from {
     opacity: 0;
     transform: scale3d(0.3, 0.3, 0.3);
   }
-
+ 
   50% {
     opacity: 1;
   }
 }
-
+ 
 @keyframes wobble {
   from {
     transform: translate3d(0, 0, 0);
   }
-
+ 
   15% {
     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
   }
-
+ 
   30% {
     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
-
+ 
   45% {
     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
-
+ 
   60% {
     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
   }
-
+ 
   75% {
     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
   }
-
+ 
   to {
     transform: translate3d(0, 0, 0);
   }
 }
+ 
