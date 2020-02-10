@@ -1,4 +1,7 @@
 @import "_variables.scss";
+@import "_homepage.scss";
+@import "_place.scss";
+@import "_button.scss";
 html {
   padding: 0;
   margin: 0;
@@ -6,183 +9,55 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
- 
+
 body {
   background-image: linear-gradient(
       to bottom,
-      rgba(124, 236, 184, 0.11),
-      rgba(68, 173, 233, 0.13)
+      rgba(15, 214, 221, 0.185),
+      rgba(0, 160, 53, 0.13)
     ),
     url(img/body-background.jpg);
   background-size: cover;
 }
- 
-.homepage {
-  position: relative;
-  height: 100vh;
-  background-image: url(img/homepage-background.jpg);
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
-  border-radius: 5rem;
-  margin: 1rem;
- 
-  .homepage-textbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: "Bowlby One SC", cursive;
-  }
-  .heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: floralwhite;
-    text-transform: uppercase;
-    text-shadow: 0.5rem 0.5rem darkgray;
-    text-align: center;
-    font-weight: 700;
- 
-    .homepage-text-primary {
-      font-size: 4rem;
-      width: 80vw;
-      letter-spacing: 1rem;
-      text-align: center;
-      margin: 0 auto;
-      animation-name: zoomIn;
-      animation-duration: 1.25s;
-      animation-timing-function: ease-out;
-      @include tablet {
-        font-size: 6rem;
-        letter-spacing: 1.8rem;
-      }
-      @include laptop {
-        font-size: 10rem;
-        letter-spacing: 2.2rem;
-      }
-    }
-    .button {
-      display: inline-block;
-      position: relative;
-      font-family: "Bowlby One SC", cursive;
-      font-size: 15px;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: bold;
-      color: #fff;
-      background-color: #3b3334;
-      padding: 12px 20px;
-      width: 120px;
-      text-align: center;
-      border-radius: 5px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-      border: 2px solid #5f5255;
-      box-shadow: 0 4px 0 #282425, 0 0 6px #282425, 1px 1px 0px #282425,
-        -1px -1px 0px #282425, 0px 8px 10px rgba(0, 0, 0, 0.5);
-      animation-name: wobble;
-      animation-duration: 1.5s;
-      animation-timing-function: ease-out;
-    }
-    .push:active {
-      box-shadow: 0 2px 0 #282425, 0 0 6px #282425, 1px 1px 0px #282425,
-        -1px -1px 0px #282425, 0px 4px 10px rgba(0, 0, 0, 0.5);
-      top: 2px;
-    }
-  }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: floralwhite;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
 }
 
 .culture {
-  height: 100vh;
-}
- 
-.cities {
+  position: relative;
   height: 100vh;
   background-image: linear-gradient(
-    to bottom,
-    rgba(36, 89, 187, 0.281),
-    rgba(83, 59, 59, 0.26)
-  ),
-  url(img/info-background.jpg);
+      to bottom rgba(36, 89, 187, 0.671),
+      rgba(151, 23, 23, 0.623)
+    ),
+    url(img/culture-background.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 2.5rem 2.5rem rgba(21, 42, 100, 0.452) inset;
+  box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
   border-radius: 5rem;
-  margin: 1rem;
-  .cities-images {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    height: 100vh;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
+  margin-bottom: 1rem;
+  font-family: "Bowlby One SC", cursive;
+
+  .culture-heading {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2.5rem;
+    text-shadow: 0.25rem 0.25rem darkgray;
+  }
+
+  .culture-cny {
+    position: absolute;
+    height: 50rem;
     display: flex;
   }
-  .cities-images-place {
-    border-radius: 5rem;
-    height: 60vh;
-    width: 30vh;
-  }
-  .shanghai {
-  }
-  .beijing {
-  }
-  .guangzhou {
-  }
 }
- 
-.photo {
-}
- 
-.stories {
-}
- 
-.about {
-}
- 
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
- 
-  50% {
-    opacity: 1;
-  }
-}
- 
-@keyframes wobble {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
- 
-  15% {
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-  }
- 
-  30% {
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-  }
- 
-  45% {
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-  }
- 
-  60% {
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-  }
- 
-  75% {
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-  }
- 
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
- 

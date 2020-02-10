@@ -1,7 +1,7 @@
-$phone: 600px;
-$tablet: 900px;
+$phone: 350px;
+$tablet: 700px;
 $laptop: 1100px;
-$desktop: 1100px;
+$desktop: 1800px;
 @mixin phone {
     @media (min-width: #{$phone}) {
       @content;
@@ -22,3 +22,5 @@ $desktop: 1100px;
     @content;
   }
 }
+ 
+ 
