@@ -1,7 +1,8 @@
 @import "_variables.scss";
 @import "_homepage.scss";
-@import "_place.scss";
+@import "_cities.scss";
 @import "_button.scss";
+@import "_culture.scss";
 html {
   padding: 0;
   margin: 0;
@@ -29,35 +30,4 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-}
-
-.culture {
-  position: relative;
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom rgba(36, 89, 187, 0.671),
-      rgba(151, 23, 23, 0.623)
-    ),
-    url(img/culture-background.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
-  border-radius: 5rem;
-  margin-bottom: 1rem;
-  font-family: "Bowlby One SC", cursive;
-
-  .culture-heading {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 2.5rem;
-    text-shadow: 0.25rem 0.25rem darkgray;
-  }
-
-  .culture-cny {
-    position: absolute;
-    height: 50rem;
-    display: flex;
-  }
 }
