@@ -197,7 +197,7 @@
   position: absolute;
   padding: 0;
   border: 0;
-  height: 50rem;
+  height: 100vh;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -206,6 +206,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card {
@@ -213,15 +216,14 @@
           perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  margin-top: 5rem;
   margin-left: auto;
-  left: -300p;
   margin-right: auto;
 }
 
 .card-side {
   height: 50rem;
   width: 30rem;
+  border-radius: 5rem;
   font-size: 1.5rem;
   color: white;
   -webkit-backface-visibility: hidden;
@@ -230,9 +232,8 @@
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-.card-side-front {
-  background-color: red;
-  position: absolute;
+.card-side-front-1 {
+  background-image: url(../dist/css/img/info-images-cities-beijing.jpg);
   top: 0;
   left: 0;
   z-index: 1;
