@@ -1,46 +1,50 @@
 @import "_keyframes.scss";
 .homepage {
-    position: relative;
-    height: 100vh;
-    background-image: linear-gradient( to bottom rgba(19, 129, 202, 0.363), rgba(15, 82, 37, 0.418)), url(img/homepage-background.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
-    border-radius: 5rem;
-    margin-bottom: 1rem;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom rgba(19, 129, 202, 0.363),
+      rgba(15, 82, 37, 0.418)
+    ),
+    url(img/homepage-background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
+  border-radius: 5rem;
+  margin-bottom: 1rem;
 }
 
 .homepage-textbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: "Bowlby One SC", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Bowlby One SC", cursive;
 }
 
 .homepage-text-primary {
-    width: 80vw;
-    letter-spacing: 1rem;
-    text-align: center;
-    margin: 0 auto;
-    text-shadow: 0.5rem 0.5rem darkgray;
-    animation-name: zoomIn;
-    animation-duration: 1.25s;
-    animation-timing-function: ease-out;
-    @include phone {
-        font-size: 3rem;
-    }
-    @include tablet {
-        font-size: 5rem;
-    }
-    @include laptop {
-        font-size: 10rem;
-    }
-    @include desktop {
-        font-size: 10rem;
-    }
+  width: 80vw;
+  letter-spacing: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 0.5rem 0.5rem darkgray;
+  animation-name: zoomIn;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-out;
+  @include phone {
+    font-size: 3rem;
+  }
+  @include tablet {
+    font-size: 5rem;
+  }
+  @include laptop {
+    font-size: 10rem;
+  }
+  @include desktop {
+    font-size: 10rem;
+  }
 }
