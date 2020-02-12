@@ -229,6 +229,15 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media (min-width: 1900px) {
   .card-container {
     -webkit-box-orient: horizontal;
@@ -272,6 +281,13 @@
     height: 25rem;
     width: 35rem;
     border-radius: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-side {
+    height: 50rem;
+    width: 30rem;
   }
 }
 
