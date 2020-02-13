@@ -1,5 +1,4 @@
 .culture {
-  position: relative;
   height: 100vh;
   background-image: linear-gradient(
       to bottom rgba(36, 89, 187, 0.671),
@@ -13,18 +12,18 @@
   border-radius: 5rem;
   margin-bottom: 1rem;
   font-family: "Bowlby One SC", cursive;
+  align-items: center;
 
   .culture-heading {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     font-size: 2.5rem;
     text-shadow: 0.25rem 0.25rem darkgray;
+    display: flex;
+    justify-content: center;
   }
 
   .culture-cny {
-    position: absolute;
-    height: 50rem;
+    height: 50%;
+    width: 50%;
     display: flex;
   }
 }
