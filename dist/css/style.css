@@ -496,7 +496,7 @@
 }
 
 .culture .culture-cny {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,16 +504,39 @@
 }
 
 .culture .culture-cny-textbox {
-  font-size: 3.5rem;
+  padding: 1rem;
   width: 50%;
 }
 
+@media (min-width: 1400px) {
+  .culture .culture-cny-textbox {
+    font-size: 2.5rem;
+  }
+}
+
 .culture .culture-cny-images {
+  position: relative;
   width: 50%;
 }
 
 .culture .culture-cny-images-image {
-  height: 10rem;
+  position: absolute;
+  height: 25rem;
+  width: 16rem;
+}
+
+#cny-cny-1 {
+  padding: 1rem;
+}
+
+#cny-cny-2 {
+  left: 25rem;
+  top: 15rem;
+}
+
+#cny-cny-3 {
+  left: 50rem;
+  top: 30rem;
 }
 
 html {
@@ -526,9 +549,14 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 214, 221, 0.185)), to(rgba(0, 160, 53, 0.13))), url(img/body-background.jpg);
-  background-image: linear-gradient(to bottom, rgba(15, 214, 221, 0.185), rgba(0, 160, 53, 0.13)), url(img/body-background.jpg);
-  background-size: cover;
+  background-color: lightgrey;
+  /*background-image: linear-gradient(
+      to bottom,
+      rgba(15, 214, 221, 0.185),
+      rgba(0, 160, 53, 0.13)
+    ),
+    url(img/body-background.jpg);
+  background-size: cover;*/
 }
 
 .heading {

@@ -1,42 +1,53 @@
 .culture {
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom rgba(36, 89, 187, 0.671),
-      rgba(151, 23, 23, 0.623)
-    ),
-    url(img/culture-background.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
-  border-radius: 5rem;
-  margin-bottom: 1rem;
-  font-family: "Bowlby One SC", cursive;
-  align-items: center;
-
-  .culture-heading {
-    font-size: 2.5rem;
-    text-shadow: 0.25rem 0.25rem darkgray;
-    display: flex;
-    justify-content: center;
-  }
-
-  .culture-cny {
     height: 100vh;
-    width: 100%;
-    display: flex;
-  }
+    background-image: linear-gradient( to bottom rgba(36, 89, 187, 0.671), rgba(151, 23, 23, 0.623)), url(img/culture-background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    font-family: "Bowlby One SC", cursive;
+    align-items: center;
+    .culture-heading {
+        font-size: 2.5rem;
+        text-shadow: 0.25rem 0.25rem darkgray;
+        display: flex;
+        justify-content: center;
+    }
+    .culture-cny {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+    }
+    .culture-cny-textbox {
+        @include laptop {
+            font-size: 2.5rem;
+        }
+        padding: 1rem;
+        width: 50%;
+    }
+    .culture-cny-images {
+        position: relative;
+        width: 50%;
+    }
+    .culture-cny-images-image {
+        position: absolute;
+        height: 25rem;
+        width: 16rem;
+    }
+}
 
-  .culture-cny-textbox {
-    font-size: 3.5rem;
-    width: 50%;
-  }
+#cny-cny-1 {
+    padding: 1rem;
+}
 
-  .culture-cny-images {
-    width: 50%;
-  }
+#cny-cny-2 {
+    left: 25rem;
+    top: 15rem;
+}
 
-  .culture-cny-images-image {
-    height: 10rem;
-  }
+#cny-cny-3 {
+    left: 50rem;
+    top: 30rem;
 }

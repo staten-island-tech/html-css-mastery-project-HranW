@@ -4,30 +4,31 @@
 @import "_button.scss";
 @import "_culture.scss";
 html {
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-image: linear-gradient(
+    background-color: lightgrey;
+    /*background-image: linear-gradient(
       to bottom,
       rgba(15, 214, 221, 0.185),
       rgba(0, 160, 53, 0.13)
     ),
     url(img/body-background.jpg);
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: floralwhite;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: floralwhite;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
 }
