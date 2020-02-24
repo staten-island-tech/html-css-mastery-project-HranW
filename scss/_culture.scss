@@ -22,12 +22,21 @@
   }
 
   .culture-cny {
-    height: 50%;
-    width: 50%;
+    height: 100vh;
+    width: 100%;
     display: flex;
   }
 
   .culture-cny-textbox {
     font-size: 3.5rem;
+    width: 50%;
+  }
+
+  .culture-cny-images {
+    width: 50%;
+  }
+
+  .culture-cny-images-image {
+    height: 10rem;
   }
 }
