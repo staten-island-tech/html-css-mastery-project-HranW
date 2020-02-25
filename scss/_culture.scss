@@ -9,8 +9,7 @@
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
-  border-radius: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   align-items: center;
 }
 
@@ -47,22 +46,22 @@
 .culture-cny-textbox {
   @include phone {
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 2.6rem;
   }
   @include tablet {
     font-size: 2.75rem;
-    line-height: 3.2rem;
+    line-height: 4.5rem;
   }
   @include laptop {
     font-size: 2.5rem;
   }
   @include desktop {
     font-size: 3rem;
-    line-height: 8rem;
+    line-height: 9.5rem;
   }
-  color: #8bd8c6;
-  font-family: 'Simonetta', ;
-  text-shadow: 0.25rem 0.25rem rgb(67, 104, 69);
+  color: #ddba1e;
+  font-family: "Simonetta";
+  text-shadow: 0.25rem 0.25rem rgb(0, 0, 0);
   padding: 2rem;
   width: 50%;
 }
@@ -103,40 +102,37 @@
 
 @include desktop {
   #cny-cny-1 {
-    left: 5rem;
-    top: 5rem;
-    filter: blur(3px);
+    left: 10rem;
+    top: 10rem;
   }
 
   #cny-cny-2 {
-    left: 30rem;
-    top: 25rem;
-    filter: grayscale(100%);
+    left: 35rem;
+    top: 30rem;
   }
 
   #cny-cny-3 {
-    left: 55rem;
-    top: 45rem;
+    left: 60rem;
+    top: 50rem;
   }
 }
 
 .culture-cny-images-image:hover {
   transform: scale(1.25);
-  outline: 0.025rem solid #222;
   z-index: 2;
 }
 
 #cny-cny-1:hover {
-  filter: blur(0);
+  box-shadow: 1.5rem 1.5rem 1.5rem rgb(51, 1, 1);
   transition: 0.5s ease-in-out;
 }
 
 #cny-cny-2:hover {
-  filter: grayscale(0%);
+  box-shadow: 1.5rem 1.5rem 1.5rem rgb(51, 1, 1);
   transition: 0.5s ease-in-out;
 }
 
 #cny-cny-3:hover {
-  box-shadow: 1.25rem 1.25rem 1.25rem rgb(102, 98, 98);
+  box-shadow: 1.5rem 1.5rem 1.5rem rgb(51, 1, 1);
   transition: 0.5s ease-in-out;
 }
