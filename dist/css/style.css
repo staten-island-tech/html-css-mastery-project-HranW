@@ -145,15 +145,15 @@
 .homepage {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 82, 37, 0.418))), url(img/background/homepage-background.jpg);
-  background-image: linear-gradient(to bottom rgba(19, 129, 202, 0.363), rgba(15, 82, 37, 0.418)), url(img/background/homepage-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(88, 235, 62, 0.418))), url(img/background/homepage-background.jpg);
+  background-image: linear-gradient(to bottom rgba(88, 232, 62, 0.363), rgba(88, 235, 62, 0.418)), url(img/background/homepage-background.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
-          box-shadow: 0 0 2.5rem 2.5rem darkslategray inset;
+  -webkit-box-shadow: 0 0 1rem 1rem darkslategray inset;
+          box-shadow: 0 0 1rem 1rem darkslategray inset;
 }
 
 .homepage-textbox {
@@ -206,14 +206,14 @@
 
 .cities {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 89, 187, 0.726)), to(rgba(83, 59, 59, 0.774))), url(img/background/cities-background-gif.gif);
-  background-image: linear-gradient(to bottom, rgba(36, 89, 187, 0.726), rgba(83, 59, 59, 0.774)), url(img/background/cities-background-gif.gif);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 44, 211, 0.726)), to(rgba(19, 44, 211, 0.774))), url(img/background/cities-background-gif.gif);
+  background-image: linear-gradient(to bottom, rgba(19, 44, 211, 0.726), rgba(19, 44, 211, 0.774)), url(img/background/cities-background-gif.gif);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(21, 42, 100, 0.452) inset;
-          box-shadow: 0 0 2.5rem 2.5rem rgba(21, 42, 100, 0.452) inset;
+  -webkit-box-shadow: 0 0 1rem 1rem rgba(21, 42, 100, 0.452) inset;
+          box-shadow: 0 0 1rem 1rem rgba(21, 42, 100, 0.452) inset;
   font-family: "Bowlby One SC", cursive;
   text-shadow: 0.3rem 0.3rem darkgray;
 }
@@ -555,13 +555,13 @@
 
 .culture {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(151, 23, 23, 0.623))), url(img/background/culture-background.jpg);
-  background-image: linear-gradient(to bottom rgba(36, 89, 187, 0.671), rgba(151, 23, 23, 0.623)), url(img/background/culture-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(125, 0, 32, 0.623))), url(img/background/culture-background.jpg);
+  background-image: linear-gradient(to bottom rgba(122, 0, 32, 0.671), rgba(125, 0, 32, 0.623)), url(img/background/culture-background.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
-          box-shadow: 0 0 2.5rem 2.5rem rgba(204, 18, 34, 0.514) inset;
+  -webkit-box-shadow: 0 0 1rem 1rem rgba(204, 18, 34, 0.514) inset;
+          box-shadow: 0 0 1rem 1rem rgba(204, 18, 34, 0.514) inset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -580,7 +580,7 @@
 }
 
 .culture-text-primary {
-  font-family: "Bowlby One SC", cursive;
+  font-family: "Bowlby One SC", cursive;
 }
 
 @media (min-width: 350px) {
@@ -753,7 +753,9 @@
 
 .header {
   height: 8.4rem;
-  background: #101010;
+  background: #ffef47;
+  -webkit-box-shadow: 0 0 1rem 1rem #222222 inset;
+          box-shadow: 0 0 1rem 1rem #222222 inset;
   padding: 0 2rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
