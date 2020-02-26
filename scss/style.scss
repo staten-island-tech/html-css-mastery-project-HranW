@@ -3,12 +3,15 @@
 @import "_cities.scss";
 @import "_button.scss";
 @import "_culture.scss";
-html {
+@import "_header.scss";
+* {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
