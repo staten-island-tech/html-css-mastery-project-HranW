@@ -152,8 +152,6 @@
   background-position: center;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 1rem 1rem darkslategray inset;
-          box-shadow: 0 0 1rem 1rem darkslategray inset;
 }
 
 .homepage-textbox {
@@ -212,8 +210,6 @@
   background-size: cover;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 0 0 1rem 1rem rgba(21, 42, 100, 0.452) inset;
-          box-shadow: 0 0 1rem 1rem rgba(21, 42, 100, 0.452) inset;
   font-family: "Bowlby One SC", cursive;
   text-shadow: 0.3rem 0.3rem darkgray;
 }
@@ -312,8 +308,8 @@
 
 .card-side {
   z-index: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
   font-size: 3rem;
   color: white;
   -webkit-box-shadow: 0 0 2.5rem 2.5rem rgba(181, 211, 14, 0.37) inset;
@@ -411,8 +407,8 @@
   z-index: 0;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,8 +556,6 @@
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 0 0 1rem 1rem rgba(204, 18, 34, 0.514) inset;
-          box-shadow: 0 0 1rem 1rem rgba(204, 18, 34, 0.514) inset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -754,8 +748,6 @@
 .header {
   height: 8.4rem;
   background: #ffef47;
-  -webkit-box-shadow: 0 0 1rem 1rem #222222 inset;
-          box-shadow: 0 0 1rem 1rem #222222 inset;
   padding: 0 2rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -850,6 +842,10 @@
   #chk:checked ~ .menu {
     right: 0;
   }
+}
+
+.plan {
+  height: 100vh;
 }
 
 * {
