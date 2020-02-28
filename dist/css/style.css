@@ -846,6 +846,11 @@
 
 .plan {
   height: 100vh;
+  background-color: #d45d5d;
+}
+
+.heading-text {
+  font-size: 5rem;
 }
 
 * {
@@ -887,5 +892,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+}
+
+.lineSeperation {
+  height: 1rem;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
