@@ -1,6 +1,6 @@
 .plan {
   height: 100vh;
-  background-color: #101010;
+  background-color: red;
   @include phone {
     display: flex;
     flex-direction: column;
