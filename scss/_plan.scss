@@ -1,11 +1,20 @@
 .plan {
   height: 100vh;
-  background-color: red;
+  background: rgb(122, 0, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 0, 32, 1) 47%,
+    rgba(0, 0, 0, 1) 100%
+  );
   @include phone {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
+}
+
+.plan i {
+  color: red;
 }
 
 .plan-heading {
@@ -188,7 +197,7 @@
   height: 120px;
   line-height: 120px;
   border-radius: 50%;
-  border: double 4px white;
+  border: double 4px red;
   text-align: center;
   vertical-align: middle;
   overflow: hidden;

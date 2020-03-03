@@ -73,8 +73,8 @@
 
 .cities {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.623)), color-stop(rgba(0, 0, 0, 0.623)), to(rgba(0, 0, 0, 0.623))), url(img/background/cities-background-gif.gif);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.623)), url(img/background/cities-background-gif.gif);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(122, 0, 32, 0.671)), color-stop(rgba(0, 0, 0, 0.623)), to(rgba(122, 0, 32, 0.671))), url(img/background/cities-background-gif.gif);
+  background-image: linear-gradient(to bottom, rgba(122, 0, 32, 0.671), rgba(0, 0, 0, 0.623), rgba(122, 0, 32, 0.671)), url(img/background/cities-background-gif.gif);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -787,7 +787,9 @@
 
 .plan {
   height: 100vh;
-  background-color: red;
+  background: #7a0020;
+  background: -webkit-gradient(linear, left top, right top, color-stop(47%, #7a0020), to(black));
+  background: linear-gradient(90deg, #7a0020 47%, black 100%);
 }
 
 @media (min-width: 350px) {
@@ -803,6 +805,10 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+}
+
+.plan i {
+  color: red;
 }
 
 .plan-heading {
@@ -1108,7 +1114,7 @@
   height: 120px;
   line-height: 120px;
   border-radius: 50%;
-  border: double 4px white;
+  border: double 4px red;
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
