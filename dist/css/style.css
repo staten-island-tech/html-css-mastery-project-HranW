@@ -183,7 +183,7 @@
   color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border: 1rem solid white;
+  border: 0.75rem solid white;
 }
 
 @media (min-width: 350px) {
