@@ -1,0 +1,28 @@
+.about {
+  height: 100vh;
+  background-color: black;
+}
+
+.about-text {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  font-family: "Montserrat";
+  color: white;
+}
+
+.about-icons {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-icons-icons {
+  height: 15rem;
+  width: 15rem;
+}
