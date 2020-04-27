@@ -57,10 +57,10 @@
 }
 
 .video-container {
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  margin: 0 auto;
+  width: auto;
 }
 
 .color-overlay {
@@ -352,43 +352,9 @@
           align-items: center;
 }
 
-.culture-heading {
-  height: 10vh;
-  font-size: 2.5rem;
-  text-shadow: 0.25rem 0.25rem darkgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.culture-text-primary {
-  font-family: "Bowlby One SC", cursive;
-}
-
-@media (min-width: 350px) {
-  .culture-text-primary {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 750px) {
-  .culture-text-primary {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1900px) {
-  .culture-text-primary {
-    font-size: 3.75rem;
-  }
-}
-
 .culture-cny {
-  height: 90vh;
-  width: 100%;
+  height: 100vh;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,11 +367,20 @@
 }
 
 .culture-cny-textbox {
-  color: #ddba1e;
-  font-family: "Simonetta";
+  color: #fff;
+  font-family: "Raleway";
   text-shadow: 0.25rem 0.25rem black;
   padding: 2rem;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 350px) {
@@ -417,7 +392,7 @@
 
 @media (min-width: 750px) {
   .culture-cny-textbox {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     line-height: 4.5rem;
   }
 }
@@ -425,6 +400,7 @@
 @media (min-width: 1400px) {
   .culture-cny-textbox {
     font-size: 2.5rem;
+    line-height: 6rem;
   }
 }
 
@@ -437,17 +413,17 @@
 
 .culture-cny-images {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 350px) {
   .culture-cny-images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
@@ -456,10 +432,26 @@
   }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1400px) {
   .culture-cny-images {
-    position: absolute;
-    left: 50%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* #cny-cny-1 {
+            left: 5rem;
+            top: 10rem;
+        }
+        #cny-cny-2 {
+            left: 20rem;
+            top: 25rem;
+        }
+        #cny-cny-3 {
+            left: 60rem;
+            top: 50rem;
+        } */
   }
 }
 
@@ -483,29 +475,13 @@
   }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1400px) {
   .culture-cny-images-image {
-    position: absolute;
-    height: 25rem;
-    width: 16rem;
+    height: 20rem;
+    width: 12rem;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     outline-offset: 0.5rem;
-  }
-}
-
-@media (min-width: 1900px) {
-  #cny-cny-1 {
-    left: 10rem;
-    top: 10rem;
-  }
-  #cny-cny-2 {
-    left: 35rem;
-    top: 30rem;
-  }
-  #cny-cny-3 {
-    left: 60rem;
-    top: 50rem;
   }
 }
 
@@ -637,9 +613,7 @@
 
 .plan {
   height: 100vh;
-  background: #7a0020;
-  background: -webkit-gradient(linear, left top, right top, color-stop(47%, #7a0020), to(black));
-  background: linear-gradient(90deg, #7a0020 47%, black 100%);
+  background-color: maroon;
 }
 
 @media (min-width: 350px) {
@@ -978,12 +952,12 @@
 }
 
 .about {
-  height: 100vh;
-  background-color: black;
+  height: 50vh;
+  background-color: maroon;
 }
 
 .about-text {
-  height: 50vh;
+  height: 25vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,7 +968,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 10rem;
+  font-size: 7rem;
   font-family: "Montserrat";
   color: white;
 }
@@ -1015,7 +989,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
+  height: 25vh;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1029,9 +1003,12 @@
   width: 80px;
   height: 80px;
   background-color: #fff;
-  text-align: center;
   line-height: 80px;
   font-size: 35px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 10px;
   display: block;
   border-radius: 50%;
