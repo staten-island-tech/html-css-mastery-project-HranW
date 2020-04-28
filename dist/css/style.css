@@ -474,6 +474,10 @@
   }
 }
 
+.culture-image-image {
+  border: 0.25rem solid white;
+}
+
 @media (min-width: 300px) {
   .culture-image-image {
     height: 17.5rem;
