@@ -92,4 +92,8 @@
     height: 30rem;
     width: 22.5rem;
   }
+  @include desktop {
+    height: 35rem;
+    width: 25rem;
+  }
 }
