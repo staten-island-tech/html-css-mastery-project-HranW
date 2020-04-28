@@ -1071,6 +1071,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 3;
+  top: 35%;
 }
 
 .about-icons ul li a:hover .icon {
