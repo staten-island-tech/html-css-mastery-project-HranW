@@ -103,7 +103,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .card-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -155,7 +155,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .card-side {
     height: 50rem;
     width: 30rem;
@@ -317,7 +317,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .culture {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -381,7 +381,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .culture-textbox {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -417,7 +417,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .culture-textbox-text {
     width: 15%;
     line-height: 2.5rem;
@@ -463,7 +463,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .culture-image {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -499,7 +499,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .culture-image-image {
     height: 30rem;
     width: 22.5rem;
@@ -1025,7 +1025,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .about-icons ul li a {
     width: 80px;
     height: 80px;
@@ -1052,7 +1052,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .about-icons ul li a .icon {
     top: 35%;
   }
