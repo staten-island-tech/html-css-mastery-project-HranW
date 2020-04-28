@@ -461,6 +461,13 @@
   }
 }
 
+@media (min-width: 1900px) {
+  .culture-image-image {
+    height: 35rem;
+    width: 25rem;
+  }
+}
+
 .header {
   height: 8.4rem;
   background: #101010;
