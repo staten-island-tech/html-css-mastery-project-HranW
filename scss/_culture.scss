@@ -25,16 +25,16 @@
   @include phone {
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50%;
+    width: 45%;
     height: 100vh;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
   @include tablet {
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50%;
+    width: 40%;
     height: 100vh;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   @include laptop {
     flex-direction: row;
@@ -47,11 +47,11 @@
 
 .culture-textbox-text {
   @include phone {
-    height: 20rem;
+    height: 17.5rem;
     line-height: 1.4rem;
   }
   @include tablet {
-    height: 30rem;
+    height: 25rem;
     line-height: 2.75rem;
   }
   @include laptop {
@@ -81,12 +81,12 @@
 
 .culture-image-image {
   @include phone {
-    height: 20rem;
-    width: 15rem;
+    height: 17.5rem;
+    width: 12.5rem;
   }
   @include tablet {
-    height: 30rem;
-    width: 25rem;
+    height: 25rem;
+    width: 20rem;
   }
   @include laptop {
     height: 30rem;
