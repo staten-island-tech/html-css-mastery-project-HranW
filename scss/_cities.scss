@@ -1,177 +1,147 @@
 .cities {
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(122, 0, 32, 0.671),
-      rgba(0, 0, 0, 0.623),
-      rgba(122, 0, 32, 0.671)
-    ),
-    url(img/background/cities-background-gif.gif);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: cover;
-  font-family: "Bowlby One SC", cursive;
-  text-shadow: 0.3rem 0.3rem darkgray;
+    height: 100vh;
+    background-image: linear-gradient( to bottom, rgba(122, 0, 32, 0.671), rgba(0, 0, 0, 0.623), rgba(122, 0, 32, 0.671)), url(img/background/cities-background-gif.gif);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0.1rem 0.1rem darkgray;
 }
 
 .cities-heading {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  @include phone {
-    font-size: 2rem;
-  }
-  @include tablet {
-    font-size: 3rem;
-  }
-  @include desktop {
-    font-size: 5rem;
-  }
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    @include phone {
+        font-size: 2rem;
+    }
+    @include tablet {
+        font-size: 3rem;
+    }
+    @include desktop {
+        font-size: 5rem;
+    }
 }
 
 .card-container {
-  padding: 0;
-  border: 0;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include phone {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  @include tablet {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  @include laptop {
-    flex-direction: row;
-  }
-  @include desktop {
-    flex-direction: row;
-  }
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include laptop {
+        flex-direction: row;
+    }
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-side {
-  z-index: 1;
-  transition: all 1.5s;
-  font-size: 3rem;
-  color: white;
-  backface-visibility: hidden;
-  border: 0.75rem solid white;
-  @include phone {
-    height: 15rem;
-    width: 25rem;
-  }
-  @include tablet {
-    height: 25rem;
-    width: 35rem;
-  }
-  @include laptop {
-    height: 50rem;
-    width: 30rem;
-  }
-  @include desktop {
-    height: 60rem;
-    width: 40rem;
-  }
+    z-index: 1;
+    transition: all 1.5s;
+    font-size: 3rem;
+    color: white;
+    backface-visibility: hidden;
+    border: 0.75rem solid white;
+    @include phone {
+        height: 15rem;
+        width: 25rem;
+    }
+    @include tablet {
+        height: 25rem;
+        width: 35rem;
+    }
+    @include laptop {
+        height: 50rem;
+        width: 30rem;
+    }
+    @include desktop {
+        height: 60rem;
+        width: 40rem;
+    }
 }
 
 .card-side-front {
-  background-size: cover;
-  background-position: center;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include phone {
-    font-size: 2rem;
-  }
-  @include tablet {
-    font-size: 3rem;
-  }
-  @include desktop {
-    font-size: 4rem;
-  }
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include phone {
+        font-size: 2rem;
+    }
+    @include tablet {
+        font-size: 3rem;
+    }
+    @include desktop {
+        font-size: 4rem;
+    }
 }
 
 #card-side-front-1 {
-  background-image: linear-gradient(
-      to bottom rgba(10, 43, 65, 0.144),
-      rgba(153, 110, 16, 0.164)
-    ),
-    url(img/cities/cities-images-cities-beijing-front.jpg);
+    background-image: linear-gradient( to bottom rgba(10, 43, 65, 0.144), rgba(153, 110, 16, 0.164)), url(img/cities/cities-images-cities-beijing-front.jpg);
 }
 
 #card-side-front-2 {
-  background-image: linear-gradient(
-      to bottom rgba(62, 86, 102, 0.116),
-      rgba(145, 108, 28, 0.164)
-    ),
-    url(img/cities/cities-images-cities-guangzhou-front.jpg);
+    background-image: linear-gradient( to bottom rgba(62, 86, 102, 0.116), rgba(145, 108, 28, 0.164)), url(img/cities/cities-images-cities-guangzhou-front.jpg);
 }
 
 #card-side-front-3 {
-  background-image: linear-gradient(
-      to bottom rgba(16, 90, 139, 0.116),
-      rgba(216, 173, 79, 0.164)
-    ),
-    url(img/cities/cities-images-cities-shanghai-front.jpg);
+    background-image: linear-gradient( to bottom rgba(16, 90, 139, 0.116), rgba(216, 173, 79, 0.164)), url(img/cities/cities-images-cities-shanghai-front.jpg);
 }
 
 .card-side-back {
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transform: rotateY(180deg);
-  transition: all 1.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(180deg);
+    transition: all 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #card-side-back-1 {
-  background-image: linear-gradient(
-      to bottom rgba(19, 129, 202, 0.363),
-      rgba(83, 205, 221, 0.418)
-    ),
-    url(img/cities/cities-images-cities-beijing-back.jpg);
+    background-image: linear-gradient( to bottom rgba(19, 129, 202, 0.363), rgba(83, 205, 221, 0.418)), url(img/cities/cities-images-cities-beijing-back.jpg);
 }
 
 #card-side-back-2 {
-  background-image: linear-gradient(
-      to bottom rgba(19, 129, 202, 0.363),
-      rgba(83, 205, 221, 0.418)
-    ),
-    url(img/cities/cities-images-cities-guangzhou-back.jpg);
+    background-image: linear-gradient( to bottom rgba(19, 129, 202, 0.363), rgba(83, 205, 221, 0.418)), url(img/cities/cities-images-cities-guangzhou-back.jpg);
 }
 
 #card-side-back-3 {
-  background-image: linear-gradient(
-      to bottom rgba(19, 129, 202, 0.363),
-      rgba(83, 205, 221, 0.418)
-    ),
-    url(img/cities/cities-images-cities-shanghai-back.jpg);
+    background-image: linear-gradient( to bottom rgba(19, 129, 202, 0.363), rgba(83, 205, 221, 0.418)), url(img/cities/cities-images-cities-shanghai-back.jpg);
 }
 
 .card:hover .card-side-front {
-  transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
 .card:hover .card-side-back {
-  transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }

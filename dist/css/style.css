@@ -79,8 +79,8 @@
   background-size: cover;
   background-position: center;
   background-size: cover;
-  font-family: "Bowlby One SC", cursive;
-  text-shadow: 0.3rem 0.3rem darkgray;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0.1rem 0.1rem darkgray;
 }
 
 .cities-heading {
@@ -321,7 +321,7 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
   padding: 12px 30px;
@@ -342,77 +342,11 @@
 
 .culture {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(125, 0, 32, 0.623))), url(img/background/culture-background.jpg);
-  background-image: linear-gradient(to bottom rgba(122, 0, 32, 0.671), rgba(125, 0, 32, 0.623)), url(img/background/culture-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(125, 0, 31, 0.788))), url(img/background/culture-background.jpg);
+  background-image: linear-gradient(to bottom rgba(122, 0, 33, 0.788), rgba(125, 0, 31, 0.788)), url(img/background/culture-background.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.culture-cny {
-  height: 100vh;
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width: 1900px) {
-  .culture-cny {
-    position: relative;
-  }
-}
-
-.culture-cny-textbox {
-  color: #fff;
-  font-family: "Raleway";
-  text-shadow: 0.25rem 0.25rem black;
-  padding: 2rem;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 350px) {
-  .culture-cny-textbox {
-    font-size: 1.5rem;
-    line-height: 2.6rem;
-  }
-}
-
-@media (min-width: 750px) {
-  .culture-cny-textbox {
-    font-size: 2.25rem;
-    line-height: 4.5rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .culture-cny-textbox {
-    font-size: 2.5rem;
-    line-height: 6rem;
-  }
-}
-
-@media (min-width: 1900px) {
-  .culture-cny-textbox {
-    font-size: 3rem;
-    line-height: 9rem;
-  }
-}
-
-.culture-cny-images {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,98 +354,95 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Raleway;
 }
 
-@media (min-width: 350px) {
-  .culture-cny-images {
-    -ms-flex-pack: distribute;
+.culture-textbox {
+  font-size: 2.5rem;
+  color: white;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.culture-textbox-text {
+  width: 15%;
+}
+
+.culture-image {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.culture-image-image {
+  height: 30rem;
+  width: 15%;
+}
+
+/* .culture-cny {
+    @include desktop {
+        position: relative;
+    }
+    height: 100vh;
+    width: auto;
+    display: flex;
+}
+
+.culture-cny-textbox {
+    @include phone {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+    }
+    @include tablet {
+        font-size: 2.25rem;
+        line-height: 4.5rem;
+    }
+    @include laptop {
+        font-size: 2.5rem;
+        line-height: 6rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+        line-height: 9rem;
+    }
+    color: #fff;
+    font-family: "Raleway";
+    text-shadow: 0.25rem 0.25rem rgb(0, 0, 0);
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.culture-cny-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    @include phone {
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (min-width: 1400px) {
-  .culture-cny-images {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* #cny-cny-1 {
-            left: 5rem;
-            top: 10rem;
-        }
-        #cny-cny-2 {
-            left: 20rem;
-            top: 25rem;
-        }
-        #cny-cny-3 {
-            left: 60rem;
-            top: 50rem;
-        } */
-  }
-}
-
-.culture-cny-images-image {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  outline-offset: 0.5rem;
-}
-
-@media (min-width: 350px) {
-  .culture-cny-images-image {
-    height: 12rem;
-    width: 8rem;
-  }
-}
-
-@media (min-width: 750px) {
-  .culture-cny-images-image {
-    height: 20rem;
-    width: 15rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .culture-cny-images-image {
-    height: 20rem;
-    width: 12rem;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    outline-offset: 0.5rem;
-  }
-}
-
-.culture-cny-images-image:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-  z-index: 2;
-}
-
-#cny-cny-1:hover {
-  -webkit-box-shadow: 1.5rem 1.5rem 1.5rem #330101;
-          box-shadow: 1.5rem 1.5rem 1.5rem #330101;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-#cny-cny-2:hover {
-  -webkit-box-shadow: 1.5rem 1.5rem 1.5rem #330101;
-          box-shadow: 1.5rem 1.5rem 1.5rem #330101;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-#cny-cny-3:hover {
-  -webkit-box-shadow: 1.5rem 1.5rem 1.5rem #330101;
-          box-shadow: 1.5rem 1.5rem 1.5rem #330101;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
+        align-items: center;
+    }
+    @include laptop {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+} */
 .header {
   height: 8.4rem;
   background: #101010;

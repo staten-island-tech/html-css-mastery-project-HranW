@@ -1,13 +1,41 @@
 .culture {
     height: 100vh;
-    background-image: linear-gradient( to bottom rgba(122, 0, 32, 0.671), rgba(125, 0, 32, 0.623)), url(img/background/culture-background.jpg);
+    background-image: linear-gradient( to bottom rgba(122, 0, 33, 0.788), rgba(125, 0, 31, 0.788)), url(img/background/culture-background.jpg);
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway;
+}
+
+.culture-textbox {
+    font-size: 2.5rem;
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.culture-cny {
+.culture-textbox-text {
+    width: 15%;
+}
+
+.culture-image {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.culture-image-image {
+    height: 30rem;
+    width: 15%;
+}
+
+
+/* .culture-cny {
     @include desktop {
         position: relative;
     }
@@ -54,56 +82,5 @@
     @include laptop {
         justify-content: space-evenly;
         align-items: center;
-        /* #cny-cny-1 {
-            left: 5rem;
-            top: 10rem;
-        }
-        #cny-cny-2 {
-            left: 20rem;
-            top: 25rem;
-        }
-        #cny-cny-3 {
-            left: 60rem;
-            top: 50rem;
-        } */
     }
-}
-
-.culture-cny-images-image {
-    transition: all 0.5s;
-    outline-offset: 0.5rem;
-    @include phone {
-        height: 12rem;
-        width: 8rem;
-    }
-    @include tablet {
-        height: 20rem;
-        width: 15rem;
-    }
-    @include laptop {
-        height: 20rem;
-        width: 12rem;
-        transition: all 0.5s;
-        outline-offset: 0.5rem;
-    }
-}
-
-.culture-cny-images-image:hover {
-    transform: scale(1.25);
-    z-index: 2;
-}
-
-#cny-cny-1:hover {
-    box-shadow: 1.5rem 1.5rem 1.5rem rgb(51, 1, 1);
-    transition: 0.5s ease-in-out;
-}
-
-#cny-cny-2:hover {
-    box-shadow: 1.5rem 1.5rem 1.5rem rgb(51, 1, 1);
-    transition: 0.5s ease-in-out;
-}
-
-#cny-cny-3:hover {
-    box-shadow: 1.5rem 1.5rem 1.5rem rgb(51, 1, 1);
-    transition: 0.5s ease-in-out;
-}
+} */
