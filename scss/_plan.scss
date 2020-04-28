@@ -27,19 +27,21 @@
 }
 
 .plan-heading-text {
-  letter-spacing: 1rem;
   font-family: "Montserrat";
   color: white;
   text-transform: uppercase;
   @include phone {
+    letter-spacing: 0.75rem;
     font-size: 2rem;
     text-align: center;
   }
   @include tablet {
+    letter-spacing: 1rem;
     font-size: 3.5rem;
     text-align: center;
   }
   @include desktop {
+    letter-spacing: 1rem;
     font-size: 5rem;
     text-align: left;
     padding-left: 5rem;
@@ -115,14 +117,16 @@
 .plan-selection-date h3 {
   color: white;
   font-family: "Montserrat";
-  letter-spacing: 1rem;
   @include phone {
+    letter-spacing: 0.75rem;
     font-size: 1.5rem;
   }
   @include tablet {
+    letter-spacing: 1rem;
     font-size: 2.5rem;
   }
   @include desktop {
+    letter-spacing: 1rem;
     font-size: 3rem;
   }
 }
@@ -152,7 +156,7 @@
     font-size: 3rem;
   }
   @include phone {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   @include tablet {
     font-size: 2.2rem;

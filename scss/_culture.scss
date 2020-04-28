@@ -36,6 +36,13 @@
     height: 100vh;
     font-size: 2.5rem;
   }
+  @include ipadpro {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100vh;
+    font-size: 3rem;
+  }
   @include laptop {
     flex-direction: row;
     height: 50vh;
@@ -48,15 +55,23 @@
 .culture-textbox-text {
   @include phone {
     height: 17.5rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
   }
   @include tablet {
     height: 25rem;
     line-height: 2.75rem;
   }
+  @include ipadpro {
+    height: 35rem;
+    line-height: 4rem;
+  }
   @include laptop {
     width: 15%;
     line-height: 2rem;
+  }
+  @include desktop {
+    width: 15%;
+    line-height: 3rem;
   }
 }
 
@@ -87,6 +102,10 @@
   @include tablet {
     height: 25rem;
     width: 20rem;
+  }
+  @include ipadpro {
+    height: 35rem;
+    width: 25rem;
   }
   @include laptop {
     height: 30rem;
