@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   @include tablet {
     flex-direction: row;
   }
@@ -82,11 +82,11 @@
 .culture-image-image {
   @include phone {
     height: 20rem;
-    width: 17.5rem;
+    width: 15rem;
   }
   @include tablet {
     height: 30rem;
-    width: 27.5rem;
+    width: 25rem;
   }
   @include laptop {
     height: 30rem;
